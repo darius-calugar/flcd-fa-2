@@ -1,0 +1,13 @@
+alpha ::= 0 | ... | 9 | a | ... | z | A | ... | Z
+digit ::= 0 | ... | 9
+
+word ::= alpha{alpha}
+number ::= number{number}
+transition ::= word word word
+
+states ::= number {word}
+alphabet ::= number {word}
+transitions ::= number {transitions}
+finalStates ::= number {word}
+
+input ::= states alphabet transitions finalStates

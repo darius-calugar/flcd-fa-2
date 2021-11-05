@@ -1,0 +1,15 @@
+3
+p q r
+
+3
+a b c
+
+5
+p q a
+q q a
+q r b
+p r b
+r r c
+
+1
+r
