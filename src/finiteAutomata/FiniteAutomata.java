@@ -64,6 +64,8 @@ public class FiniteAutomata {
 
     public boolean move(String state, String sequence) {
         System.out.println(state + ", " + sequence);
+        if (finalStates.contains(state) && sequence.isEmpty())
+            return true;
         return transitions.stream()
                 .filter((t) -> t.originState.equals(state) &&
                                sequence.startsWith(t.character))
